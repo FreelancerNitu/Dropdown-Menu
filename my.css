@@ -1,0 +1,90 @@
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+.container{
+ max-width: 960px;
+ width: 96%;
+ margin: 0 auto;
+ 
+}
+img{
+ max-width: 100%;
+ height: auto;
+}
+/* header start */
+.menu-bar {
+  background: rgb(0,100,0);
+  text-align: center;
+}
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+  
+}
+.menu-bar ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+  
+}
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.active, .menu-bar ul li:hover{
+  background: rgb(42, 197, 42);
+  border-radius: 3px;
+}
+.sub-menu-1{
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+  display: block;
+  margin-top: 15px;
+  margin-left: -15px;
+  position: absolute;
+  background: rgb(58, 34, 197);
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+  color: rgb(255, 0, 43);
+}
+.sub-menu-2{
+  display: none;
+}
+.hover-me:hover .sub-menu-2{
+  display: block;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 140px;
+  background:rgb(58, 34, 197);
+}
+.sub-menu-3{
+  display: none;
+}
+.hover-me2:hover .sub-menu-3{
+  display: block;
+  position: absolute;
+  background: rgb(58, 34, 197);
+  margin-top: -20px;
+  margin-left: 140px;
+}
